@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        h1{
+            color:red;
+        }
+        del,big,small{
+            color:rgb(40,180,40);
+        }
+        .p1{
+            color:pink;
+        }
+        *{
+            color:#2c06e8;
+        }
+        #i2{
+            text-transform:uppercase;
+            text-align:center;
+            text-decoration-color: orange;
+            text-decoration-thickness: 10px;
+            text-decoration-style: dotted;
+            text-decoration-line: underline;
+            text-decoration: dotted orange underline 20px;
+            text-shadow: 10px 10px 0px red;
+            font-family: 'Times New Roman';
+            font-style: italic;
+            font-weight: bolder;
+            padding: 40px 20px 30px 10px;
+            background-color: aqua;
+        }
+        #i3{
+            text-indent: 30%;
+            word-spacing: 20px;
+            letter-spacing: 10px;
+            line-height: 50px;
+            font-family: Arial;
+            font-style: italic;
+            font-weight: bolder;
+        }
+        .c1{
+            background-color: rgb(128, 112, 216);
+            border: 10px solid brown;
+            color: blanchedalmond;
+            border-color: black;
+            padding-left: 10px;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            padding-right: 30px;
+            margin: 50px 30px 40px 20px;
+        }
+        .block1{
+            height: 100px;
+            width: 50px;
+            background-color: blanchedalmond;
+            position: static;
+            top: 50px;
+
+        }
+        .block2{
+            height: 100px;
+            width: 50px;
+            background-color: blueviolet;
+            position: relative;
+            width: 20px;
+    
+        }
+        .block3{
+            height: 100px;
+            width: 50px;
+            background-color: rgb(200, 197, 202);
+            position: fixed;
+            width: 20px;
+    
+        }
+        body{
+            background-image:url(c:\Users\shett\OneDrive\Pictures\97309e403689f42a1e8bf2060570d8c8(1).jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="i2">this is my css text</h1>
+    <h1 id="i3">this is my css love</h1>
+    <p class="c1">i love you acharya</p>
+    <h1>Physical Tag</h1>
+    <p><b>Bold</b> test example</p>
+    <p><i>Italic</i> test example</p>
+    <p><u>underlined</u> text example</p>
+    <p></p>
+    <div class="block block1"></div>
+    <div class="block block2"></div>
+    <div class="block block3"></div>
+
+    <p><big>BIG</big> text example</p>
+    <p><small>Small </small> Text example</p>
+    <h1>logical tags</h1>
+    <p><abbr title="world health organisation">WHO</abbr>is a globla health organisation</p>
+    <p><cite>Harry potter</cite>is a novel by J.K Rowlig</p>
+    <p><code>system.out.println("hello,world");</code>is a java print statement</p>
+    <p><output>Hello user</output>is a sample output</p>
+    <p><var>x</var>is a variable</p>
+    <h1>Void tags</h1>
+    <img src="example.jpg" alt="sample image" width="100" height="100">
+    <input type="text" placeholder="typehere">
+    <h1>Table example</h1>
+    <table>
+        <caption>student info</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>anupama</td>
+                <td>22</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>eeksha</td>
+                <td>22</td>
+                <td>b</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <h1>List example</h1>
+    <h2>ordered list</h2>
+    <ol type="A" start="3">
+        <li>
+            ::marker
+            "Apple"
+        </li>
+        <li>
+            ::marker
+            "banana"
+        </li>
+        <li>
+            ::marker
+            "cherry"
+        </li>
+    </ol>
+    <h2>unordered list</h2>
+    <ul type="circle">
+        <li>
+            ::marker
+            "anu"
+        </li>
+        <li>
+            ::marker
+            "ansu"
+        </li>
+        <li>
+            ::marker
+            "janu"
+        </li>
+    </ul>
+    <h2>definition list</h2>
+    <dl>
+        <dt>HTML </dt>
+        <dd>hyper text markup language</dd>
+        <dt>CSS</dt>
+        <dd>cascading style sheets</dd>
+
+    </d1>
+    <h1>links</h1>
+    <p>
+        <a href="#bookmarks" target="_self">Physical tags</a>
+    </p>
+    <p>
+        <a href="https://google.com" target="blank">visit google</a>
+    </p>
+    <h1>Form example</h1>
+    <form action="https://google.com" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+    <h1>non-smantic tags</h1>
+    <div>anupama is good girl</div>
+    <span>used for inline grouping</span>
+    <h1>semantic tag</h1>
+    <header>
+        <h2>website header</h2>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        "|"
+        <a href="#">About</a>
+        "|"
+    </nav>
+    <main>
+        <article>
+            <h3>article title</h3>
+            <p>eeksha and anupama best frinds</p>
+        </article>
+        <section>
+            <h3>section title</h3>
+            <p>i think i have to quit super 100</p>
+        </section>
+        <aside>
+            <p>this is anupama</p>
+        </aside>
+    </main>
+    <footer>
+        <p>jahnavi and eeksha are bestfriends till last breath</p>
+    </footer>
+</body>
+</html>

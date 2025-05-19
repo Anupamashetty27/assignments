@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  h2 {
+    text-align: center;
+  }
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="number"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .gender-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .gender-options {
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+  }
+  input[type="radio"] {
+    margin: 0;
+  }
+  .languages-known {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  input[type="checkbox"] {
+    margin: 0;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  .declaration {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .login-link {
+    text-align: center;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form>
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+
+  <label for="email">Email</label>
+  <input type="text" id="email" name="email" placeholder="Enter your email">
+
+  <label for="password">Password</label>
+  <input type="password" id="password" name="password" placeholder="Enter your password">
+
+  <label for="repassword">Re-enter Password</label>
+  <input type="password" id="repassword" name="repassword" placeholder="Re-enter your password">
+
+  <label>Gender:</label>
+  <div class="gender-container">
+    <div class="gender-options">
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+    </div>
+  </div>
+
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" placeholder="Enter your age">
+
+  <label for="phone">Phone Number</label>
+  <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+
+  <label for="address">Address</label>
+  <textarea id="address" name="address" placeholder="Enter your address"></textarea>
+
+  <label for="state">State</label>
+  <input type="text" id="state" name="state" placeholder="Enter your state">
+
+  <label for="country">Country</label>
+  <select id="country" name="country">
+    <option value="">Choose your country</option>
+    <option value="usa">USA</option>
+    <option value="canada">Canada</option>
+    <option value="uk">UK</option>
+    <option value="india">India</option>
+    <option value="australia">Australia</option>
+  </select>
+
+  <label>Languages known</label>
+  <div class="languages-known">
+    <input type="checkbox" id="english" name="language" value="english">
+    <label for="english">English</label>
+    <input type="checkbox" id="kannada" name="language" value="kannada">
+    <label for="kannada">Kannada</label>
+    <input type="checkbox" id="hindi" name="language" value="hindi">
+    <label for="hindi">Hindi</label>
+    <input type="checkbox" id="telugu" name="language" value="telugu">
+    <label for="telugu">Telugu</label>
+  </div>
+
+  <div class="declaration">
+    <input type="checkbox" id="declare" name="declaration">
+    <label for="declare">Hereby I declare all the given details are true</label>
+  </div>
+
+  <div class="login-link">
+    <a href="#">Log in to Acharya website</a>
+  </div>
+
+  <button type="submit">Register</button>
+</form>
+
+</body>
+</html>

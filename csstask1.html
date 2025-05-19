@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task 1</title>
+<style>
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #0056b3;
+}
+
+.table-container {
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #aed6d4;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #e9f5f5;
+}
+
+tr:hover {
+    background-color: #d0e0e3;
+}
+
+td {
+    background-color: #c2e0e0;
+}
+
+.shapes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.shape {
+    width: 80px;
+    height: 50px;
+    border: 2px solid #8bc34a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    border-radius: 10px;
+}
+
+.oval {
+    border-radius: 50%;
+    width: 80px;
+    height: 50px;
+}
+</style>
+</head>
+<body>
+
+<h1>Task 1</h1>
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="shapes-grid">
+    <div class="shape square"></div>
+    <div class="shape square"></div>
+    <div class="shape square"></div>
+    <div class="shape square"></div>
+    <div class="shape square"></div>
+    <div class="shape square"></div>
+    <div class="shape oval"></div>
+    <div class="shape square"></div>
+    <div class="shape square"></div>
+</div>
+
+</body>
+</html>
+  

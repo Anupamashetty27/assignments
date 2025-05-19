@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task 2</title>
+<style>
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #0056b3;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #333;
+}
+
+.vertical-nav {
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.vertical-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vertical-nav li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.vertical-nav li a.active {
+    background-color: #ff9800;
+    color: white;
+}
+
+.vertical-nav li:nth-child(n+2) a {
+    background-color: #b3e5fc;
+}
+
+
+.vertical-nav li a:hover:not(.active) {
+    background-color: #e0e0e0;
+}
+
+.horizontal-nav {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-block; /* To contain the ul */
+}
+
+.horizontal-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.horizontal-nav li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.horizontal-nav li:first-child a {
+    background-color: #bdbdbd;
+    color: #333;
+}
+
+.horizontal-nav li a:hover {
+    background-color: #e0e0e0;
+}
+</style>
+</head>
+<body>
+
+<h1>Task 2</h1>
+
+<h2>Vertical Navigation Bar</h2>
+<div class="vertical-nav">
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">Bootstrap</a></li>
+    </ul>
+</div>
+
+<h2>Horizontal Navigation Bar</h2>
+<div class="horizontal-nav">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
